@@ -13,10 +13,7 @@ var fileinclude  = require('gulp-file-include'),
 
 var PORT = 8090,
     buildPath='dist',
-    staticPath='../..',
-    cssPath='__CSS__',
-    jsPath='__JS__',
-    imgPath='__PUBLIC__';
+    staticPath='../..';
 
 //清除目录
 gulp.task('clean', function() {
@@ -105,7 +102,7 @@ gulp.task('watch', function() {
             gulp.watch('src/**/*.{jpg,png,gif}',['imagemin'])
             gulp.watch('src/**/*.{shtml,html}',['fileinclude'])
         })
-  
+
 })
 gulp.task('build', function() {
     gulpSequence(

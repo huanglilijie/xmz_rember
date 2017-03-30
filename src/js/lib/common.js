@@ -2,8 +2,9 @@ define([
 	'./zepto.min',
 	'./template.min',
 	'./es6-promise',
-	'./fastclick'
-],function (a,template,Promise,FastClick) {
+	'./fastclick',
+	'./mock'
+],function (a,template,Promise,FastClick,Mock) {
 	$(function(){
 		//消除移动端点击延迟
 		FastClick.attach(document.body);
@@ -79,9 +80,10 @@ define([
 		ajaxError : function(){
 			this.hideLoading()
 		},
-		FastClick: FastClick
+		FastClick: FastClick,
+		Mock:Mock
 	}
-	
+
 	function escapeQuery(str) { //参数处理
 		if(!str){
 	 		return "";
@@ -122,5 +124,5 @@ define([
             return true;
         }
 	}
-	
+
 })
