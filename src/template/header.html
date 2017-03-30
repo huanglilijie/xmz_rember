@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="author" content="huanglijie" />
+		<meta name="copyright" content="" />
+		<meta name="applicable-device" content="mobile">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="@@static/sass/lib/weui.min.css">
+		@@for (var i = 0; i < cssFile.length; i++) {
+		<link rel="stylesheet" href="${cssFile[i]}">
+		}
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_x2n2gum1swbnvcxr.css">
+		<title>@@title</title>
+		<script src="@@static/js/lib/weui.min.js"></script>
+	</head>
+<body class="@@bodyClass">
+@@if( showLoading === true ){
+	<!-- 加载动画 -->
+	@@include('./loading.html')
+}

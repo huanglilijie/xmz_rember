@@ -1,0 +1,52 @@
+.logo{
+	text-align: center;
+	width: 100%;
+	padding: 100px 0 40px 0px;
+}
+.logo img{
+	width: 30%;
+	margin-bottom: 20px;
+}
+.logo p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #5d5d5d;
+}
+.loginInput{
+	width: 80%;
+	margin-left: 10%;
+	color: #a9a9a9;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.loginInput .loginAgree{
+	background-color:#ffb900;
+	border: none;
+	margin-top: 20px;
+}
+.loginInput .uiAgree{
+	font-size: 12px;
+}
+.loginInput .loginAgree:checked:before{
+	color:#fff;
+}
+
+.login{
+	width: 80%;
+	margin-left: 10%;
+}
+.login_primary{
+	background-color:#ffb900;
+	font-size: 16px;
+	margin-top: 30px;
+}
+.login_primary:not(.weui-btn_disabled):active{
+	background-color:#ffcf4f;
+	font-size: 16px;
+}
+.reg{
+	width: 80%;
+	margin-left: 10%;
+}

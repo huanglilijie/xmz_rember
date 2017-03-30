@@ -1,0 +1,13 @@
+@@include('@@static/template/header.html',{
+    "title" : "首页",
+    "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/home/home.css","@@static/sass/lib/swiper.css"],
+    "bodyClass" : "home",
+    "showLoading":false
+})
+<!-- 这里写内容 -->
+<div>内容</div>
+<!-- 引用js 一个页面一个主js -->
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/index/index.js"></script>
+
+<!-- 引入公共底部 -->
+@@include('@@static/template/footer.html')

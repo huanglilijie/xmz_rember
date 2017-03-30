@@ -1,0 +1,140 @@
+.body{
+	padding-bottom: 20px;
+}
+.bodyGift{
+	padding-bottom: 20px;
+	background: #ededed;
+}
+.flex__item_p{
+	text-align: center;
+	font-size: 18px;
+}
+.flex__item_div{
+	text-align: center;
+	color: #a9a9a9;
+	font-size: 13px;
+}
+.couponTop{
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #dcdcdc;
+	margin-bottom: 20px;
+}
+.couponEff,.couponOver{
+	width: 80%;
+	margin-left: 5%;
+}
+.couponEff{
+	list-style: none;
+	height: 50px;
+	background: url('../../img/tick.png') no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	padding: 10px 5%;
+	margin-top: 10px;
+}
+.couponName{
+	font-size: 18px;
+}
+.couponDate{
+	font-size: 12px;
+}
+.loadmore{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2.4em;
+}
+.couponOver{
+	width: 80%;
+	list-style: none;
+	height: 50px;
+	background: url('../../img/tickover.png') no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	padding: 10px 5% 10px 5%;
+	margin-top: 10px;
+}
+.giftNum{
+	width: 50%;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 10%;
+	border: none;
+	border: 1px solid #b1b1b1;
+	border-radius: 8px;
+	text-indent: 10px;
+	font-size: 13px;
+	box-sizing: border-box;
+}
+.toGift{
+	width: 25%;
+	height: 35px;
+	line-height: 35px;
+	border: none;
+	border-radius: 8px;
+	font-size: 13px;
+	margin-left: 5%;
+	background: #ffb900;
+	color: #fff;
+}
+.giftNav{
+	width: 100%;
+	background: #ffb900;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #dcdcdc;
+	border-radius: 6px;
+}
+.giftNav ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.giftNav ul li{
+	flex: 1;
+	list-style: none;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	padding: 0px 5px;
+	position: relative;
+
+}
+.giftNav ul li.giftAct{
+	color: #fff;
+}
+.giftAct:after{
+	content: '';
+	width: 50%;
+	left: 25%;
+	bottom: 5px;
+	height: 1px;
+	display: block;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+}
+.cpList{
+	width: 90%;
+	background: #fff;
+	margin-left: 5%;
+	margin-top: 80px;
+	border-radius: 5px;
+	overflow: hidden;
+	}
+.aluseList,.overList{
+	display: none;
+}
+
+.list_item{
+	list-style-position:inside;
+	padding: 10px 20px;
+}
+.list_item li{
+	line-height: 30px;
+	font-size: 14px;
+}
+.pic_content{
+	width: 100%;
+}
+.pic_content img{
+	width: 100%;
+}

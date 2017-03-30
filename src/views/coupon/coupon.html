@@ -1,0 +1,63 @@
+@@include('@@static/template/header.html',{
+    "title" : "我的优惠券",
+    "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/coupon/coupon.css"],
+    "bodyClass" : "body",
+    "showLoading":false
+})
+
+<div class="content">
+    <div class="weui-flex couponTop">
+        <div class="weui-flex__item">
+            <p class="flex__item_p">5张</p>
+            <div class="flex__item_div">可用优惠券</div>
+        </div>
+        <div class="weui-flex__item">
+            <p class="flex__item_p">3张</p>
+            <div class="flex__item_div">即将过期</div>
+        </div>
+        <div class="weui-flex__item toCode">
+            <p class="flex__item_p">礼品劵</p>
+            <div class="flex__item_div">领取</div>
+        </div>
+    </div>
+    <div class="couponList">
+        <ul>
+            <li class="couponEff">
+                <p class="couponName">优惠券名称</p>
+                <p class="couponDate">限用日期：2017/03/04-05/08</p>
+            </li>
+            <li class="couponEff">
+                <p class="couponName">优惠券名称</p>
+                <p class="couponDate">限用日期：2017/03/04-05/08</p>
+            </li>
+            <li class="couponEff">
+                <p class="couponName">优惠券名称</p>
+                <p class="couponDate">限用日期：2017/03/04-05/08</p>
+            </li>
+        </ul>
+    </div>
+    <div class="weui-loadmore weui-loadmore_line loadmore">
+        <span class="weui-loadmore__tips">暂无数据</span>
+    </div>
+    <div class="couponList">
+        <ul>
+            <li class="couponOver">
+                <p class="couponName">优惠券名称</p>
+                <p class="couponDate">限用日期：2017/03/04-05/08</p>
+            </li>
+            <li class="couponOver">
+                <p class="couponName">优惠券名称</p>
+                <p class="couponDate">限用日期：2017/03/04-05/08</p>
+            </li>
+            <li class="couponOver">
+                <p class="couponName">优惠券名称</p>
+                <p class="couponDate">限用日期：2017/03/04-05/08</p>
+            </li>
+        </ul>
+    </div>
+    @@include('@@static/template/code.html')
+    @@include('@@static/template/giftCou.html')
+</div>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/giftCoupon/giftCoupon.js"></script>
+<!-- 引入公共底部 -->
+@@include('@@static/template/footer.html')

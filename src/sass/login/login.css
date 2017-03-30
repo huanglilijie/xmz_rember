@@ -1,0 +1,94 @@
+.logo{
+	text-align: center;
+	width: 100%;
+	padding: 100px 0 60px 0px;
+}
+.logo img{
+	width: 30%;
+}
+.loginInput{
+	width: 80%;
+	margin-left: 10%;
+}
+.loginInput input[type="text"]{
+	width: 100%;
+	height: 20px;
+	padding: 10px 0px;
+	line-height: 20px;
+	border-radius: 5px;
+	border:none;
+	border: 1px solid #7b7b7b;
+	text-indent: 30px;
+	background: url('../../img/username.png') no-repeat 8px 10px;
+	background-size: 15px 20px;
+	color: #7b7b7b;
+	font-size: 14px;
+}
+.loginInput input[type="password"]{
+	width: 100%;
+	height: 20px;
+	padding: 10px 0px;
+	line-height: 20px;
+	border-radius: 5px;
+	border:none;
+	border: 1px solid #7b7b7b;
+	text-indent: 30px;
+	background: url('../../img/password.png') no-repeat 8px 10px;
+	background-size: 15px 20px;
+	color: #7b7b7b;
+	font-size: 14px;
+	margin-top: 40px;
+}
+.loginInput input:nth-child(3){
+	width: 100%;
+	height: 20px;
+	padding: 10px 0px;
+	line-height: 20px;
+	border-radius: 5px;
+	border:none;
+	border: 1px solid #7b7b7b;
+	text-indent: 30px;
+	background: url('../../img/passwordAgain.png') no-repeat 8px 10px;
+	background-size: 15px 20px;
+	color: #7b7b7b;
+	font-size: 14px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.loginInput .loginAgree{
+	background-color:#ffb900;
+	border: none;
+	margin-top: 20px;
+}
+.loginInput .uiAgree{
+	font-size: 12px;
+}
+.loginInput .loginAgree:checked:before{
+	color:#fff;
+}
+.loginInput .noRegister{
+	font-size: 12px;
+	float: right;
+	padding-top: .5em;
+	margin-top: 20px;
+}
+.loginInput .noRegister a{
+	color: #ffb900;
+}
+.login{
+	width: 80%;
+	margin-left: 10%;
+}
+.login_primary{
+	background-color:#ffb900;
+	font-size: 16px;
+	margin-top: 30px;
+}
+.login_primary:not(.weui-btn_disabled):active{
+	background-color:#ffcf4f;
+	font-size: 16px;
+}
+.reg{
+	width: 36%;
+	margin-left: 32%;
+}
