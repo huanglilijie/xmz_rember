@@ -1,21 +1,24 @@
 @@include('@@static/template/header.html',{
-    "title" : "注册",
+    "title" : "专题活动报名通道",
     "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/xjKitchen/xjKitchen.css"],
     "bodyClass" : "home",
     "showLoading":false
 })
 
-<div class="content">
-	<div class="logo">
-		<p>菜谱名称</p>
-	</div>
-	<div class="loginInput">
-		<p>会员可报名参加线下学做西门子家电明星菜肴
-每次活动仅限20名会员参加
-	</div>
-    <div class="reg">
-    	<a href="@@static/views/sign/sign.html" class="weui-btn weui-btn_primary login_primary">点此通道报名参加</a>
-    </div>
+<div class="content" id="content">
+
 </div>
+<script type="text/html" id="inner">
+  <div class="logo">
+    <p>{{title}}</p>
+  </div>
+  <div class="loginInput">
+    {{desc}}
+  </div>
+    <div class="reg">
+      <a href="{:U('Index/sign')}&activityid={{id}}&title={{title}}" class="weui-btn weui-btn_primary login_primary">点此通道报名参加</a>
+    </div>
+</script>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/sign/apply.js"></script>
 <!-- 引入公共底部 -->
 @@include('@@static/template/footer.html')

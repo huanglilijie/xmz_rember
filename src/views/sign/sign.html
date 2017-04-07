@@ -1,5 +1,5 @@
 @@include('@@static/template/header.html',{
-    "title" : "注册",
+    "title" : "专题活动报名通道",
     "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/sign/sign.css"],
     "bodyClass" : "home",
     "showLoading":false
@@ -8,17 +8,16 @@
 <div class="content">
 	<div class="logo">
 		<img src="@@static/img/logo.png" alt="">
-		<p>西门课堂报名通道</p>
+		<p class="title">西门课堂报名通道</p>
 	</div>
 	<div class="loginInput">
 		<input type="tel" placeholder="请输入手机号码" class="tel">
 		<input type="text" placeholder="请输入姓名" class="userName">
-		<input type="tel" placeholder="请输入当前累计会员积分
-		" class="vipNum">
 	</div>
     <div class="reg">
-    	<a href="javascript:;" class="weui-btn weui-btn_primary login_primary" onclick='weui.alert("您的信息已提交，尽快与您联系！")'>马上报名</a>
+    	<a href="javascript:;" class="weui-btn weui-btn_primary login_primary">马上报名</a>
     </div>
 </div>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/sign/sign.js"></script>
 <!-- 引入公共底部 -->
 @@include('@@static/template/footer.html')

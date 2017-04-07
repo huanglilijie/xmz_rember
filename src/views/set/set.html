@@ -1,0 +1,62 @@
+@@include('@@static/template/header.html',{
+    "title" : "设置",
+    "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/login/login.css"],
+    "bodyClass" : "home",
+    "showLoading":false
+})
+
+<div class="content pd">
+	<div class="title">用户信息 <span class="orange">（*为必填）</span></div>
+      <ul class="list_item">
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>姓名
+              </div>
+              <input type="text" name="" value="" placeholder="请输入姓名">
+          </li>
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>称呼
+              </div>
+              <input type="text" name="" value="" placeholder="请选择您的称呼">
+          </li>
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>手机号码
+              </div>
+              <input type="tel" name="" value="" placeholder="请输入手机号码">
+          </li>
+          <li>
+              <div class="tips">
+                邮箱
+              </div>
+              <input type="tel" name="" value="" placeholder="请输入您的邮箱">
+          </li>
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>省
+              </div>
+              <input type="tel" name="" value="" placeholder="请选择省">
+          </li>
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>市
+              </div>
+              <input type="tel" name="" value="" placeholder="请选择市">
+          </li>
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>区
+              </div>
+              <input type="tel" name="" value="" placeholder="请选择区">
+          </li>
+          <li>
+              <div class="tips">
+                <span class="orange">*</span>详细地址
+              </div>
+              <input type="tel" name="" value="" placeholder="请选择详细地址">
+          </li>
+      </ul>
+</div>
+<!-- 引入公共底部 -->
+@@include('@@static/template/footer.html')

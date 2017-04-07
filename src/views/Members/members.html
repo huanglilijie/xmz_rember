@@ -6,83 +6,101 @@
 })
 
 <div class="content">
-    <div class="top">
-        <img src="@@static/img/userlogo.png" alt="">
-        <p>用户名</p>
-        <p>普通会员 1级</p>
-    </div>
-    <div class="myscore">
-        <div class="page__hd">
-            <h1 class="page__title mstitle">我的积分</h1>
-        </div>
-        <div class="weui-grids">
-            <a href="javascript:;" class="weui-grid">
-                <div class="weui-grid__icon">
-                    <img src="@@static/img/ms_1.png" alt="">
-                </div>
-                <p class="weui-grid__label grid__label">每月签到</p>
-            </a>
-            <a href="javascript:;" class="weui-grid">
-                <p class="mscore">500</p>
-                <p class="weui-grid__label grid__label">累计积分</p>
-            </a>
-            <a href="javascript:;" class="weui-grid toCode">
-                <div class="weui-grid__icon">
-                    <img src="@@static/img/ms_2.png" alt="">
-                </div>
-                <p class="weui-grid__label grid__label">兑换礼品劵</p>
-            </a>
-            
-        </div>
-    </div>
+  <div id="user_info">
+
+  </div>
+
     <div class="freedom">
         <div class="page__hd">
             <h1 class="page__title mstitle">我的积分</h1>
         </div>
         <div class="weui-grids">
-            <a href="@@static/views/vipMonth/vipMonth.html" class="weui-grid">
+            <a href="{:U('Index/zhuanxiang')}" class="weui-grid">
                 <div class="weui-grid__icon">
-                    <img src="@@static/img/ms_3.png" alt="">
+                    <img src="@@static/img/ms_6.png" alt="">
                 </div>
-                <p class="weui-grid__label grid__label">会员月活动</p>
+                <p class="weui-grid__label grid__label">会员专享</p>
             </a>
-            <a href="@@static/views/welfare/welfare.html" class="weui-grid">
+            <a href="{:U('Index/gift')}" class="weui-grid">
                 <div class="weui-grid__icon">
-                    <img src="@@static/img/ms_4.png" alt="">
+                    <img src="@@static/img/ms_7.png" alt="">
                 </div>
-                <p class="weui-grid__label grid__label">我的福利</p>
+                <p class="weui-grid__label grid__label">赠品兑换</p>
             </a>
-            <a href="@@static/views/coupon/coupon.html" class="weui-grid">
+            <a href="{:U('Index/coupon')}" class="weui-grid">
                 <div class="weui-grid__icon">
                     <img src="@@static/img/ms_5.png" alt="">
                 </div>
                 <p class="weui-grid__label grid__label">优惠券</p>
             </a>
-            <a href="@@static/views/vip/vip.html" class="weui-grid">
+
+            <a href="{:U('Index/vipMonth')}" class="weui-grid">
                 <div class="weui-grid__icon">
-                    <img src="@@static/img/ms_6.png" alt="">
+                    <img src="@@static/img/ms_3.png" alt="">
                 </div>
-                <p class="weui-grid__label grid__label">会员专享活动</p>
+                <p class="weui-grid__label grid__label">会员月活动</p>
             </a>
-            <a href="@@static/views/gift/gift.html" class="weui-grid">
+            <a href="{:U('Index/welfare')}" class="weui-grid">
                 <div class="weui-grid__icon">
-                    <img src="@@static/img/ms_7.png" alt="">
+                    <img src="@@static/img/ms_4.png" alt="">
                 </div>
-                <p class="weui-grid__label grid__label">赠品</p>
+                <p class="weui-grid__label grid__label">我的福利</p>
             </a>
-            <a href="javascript:;" class="weui-grid">
+            <a href="{:U('Index/set')}" class="weui-grid">
                 <div class="weui-grid__icon">
                     <img src="@@static/img/ms_8.png" alt="">
                 </div>
                 <p class="weui-grid__label grid__label">设置</p>
             </a>
 
-            
+
         </div>
     </div>
-    @@include('@@static/template/code.html')
-    @@include('@@static/template/giftCou.html')
 </div>
-<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/giftCoupon/giftCoupon.js"></script>
+<div class="qiandao_mask">
+    <div class="qiandao_inner">
+      <div class="close"><img src="@@static/img/close.png" alt=""></div>
+      <div class="qiandao_btn">
+          立即签到
+      </div>
+      <p class="tips_small">今日签到成功，获得100积分！</p>
+      <div class="date_box">
+
+      </div>
+      <p class="tips">当天签到获得100积分，累计签到5天赢好礼！</p>
+    </div>
+</div>
+<script type="text/html" id="user_tml">
+  <div class="top" >
+    <img src="@@static/img/userlogo.png" alt="">
+    <p>{{nickname}}</p>
+    <p>普通会员{{if !level}}0{{/if}}{{if level}}{{level}}{{/if}}级</p>
+  </div>
+  <div class="myscore">
+      <div class="page__hd">
+          <h1 class="page__title mstitle">我的积分</h1>
+      </div>
+      <div class="weui-grids">
+          <a href="javascript:;" class="weui-grid qiandao">
+              <div class="weui-grid__icon">
+                  <img src="@@static/img/ms_1.png" alt="">
+              </div>
+              <p class="weui-grid__label grid__label">每月签到</p>
+          </a>
+          <a href="javascript:;" class="weui-grid">
+              <p class="mscore">{{if !total_integral}}0{{/if}}{{if total_integral}}{{total_integral}}{{/if}}</p>
+              <p class="weui-grid__label grid__label">累计积分</p>
+          </a>
+          <a href="javascript:;" class="weui-grid toCode">
+              <div class="weui-grid__icon">
+                  <img src="@@static/img/ms_2.png" alt="">
+              </div>
+              <p class="weui-grid__label grid__label">兑换礼品劵</p>
+          </a>
+
+      </div>
+  </div>
+</script>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/members/members.js"></script>
 <!-- 引入公共底部 -->
 @@include('@@static/template/footer.html')

@@ -92,3 +92,77 @@
 	width: 36%;
 	margin-left: 32%;
 }
+
+
+
+/*设置*/
+.pd{
+	padding: 15px;
+}
+
+.title{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	font-size: 17px;
+}
+.orange{
+	color: orange;
+}
+.list_item li{
+		list-style: none;
+		margin-top: 10px;
+}
+.list_item li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.tips{
+	float: left;
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 16px;
+}
+.list_item li input{
+	float: left;
+	background: #f1f1f1;
+	width: 70%;
+	border: none;
+	height: 40px;
+	text-indent: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+
+/*会员专享*/
+.bg{
+	background: #f1f1f1;
+}
+.icon{
+	text-align: center;
+	font-size: 14px;
+}
+.icon img{
+	width: 30px;
+	height: 30px;
+}
+
+.inner {
+	background:#ffb900 url(../../img/inner_bg.png) bottom center no-repeat;
+	background-size: 100%;
+	width: 100%;
+	min-height: 200px;
+	color: #fff;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	top: 32%;
+}
+.inner li{
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0 15px;
+}

@@ -10,8 +10,8 @@
 		<img src="@@static/img/logo.png" alt="">
 	</div>
 	<div class="loginInput">
-		<input type="text" placeholder="用户名">
-		<input type="password" placeholder="登录密码">
+		<input type="text" placeholder="用户名" class="user_name">
+		<input type="password" placeholder="登录密码" class="password">
 	</div>
 
 	<div class="weui-flex loginInput">
@@ -31,8 +31,9 @@
         </div>
     </div>
     <div class="login">
-    	<a href="@@static/views/Members/members.html" class="weui-btn weui-btn_primary login_primary">登录</a>
+    	<div class="weui-btn weui-btn_primary login_primary">登录</div>
     </div>
 </div>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/login/login.js"></script>
 <!-- 引入公共底部 -->
 @@include('@@static/template/footer.html')

@@ -1,0 +1,43 @@
+@@include('@@static/template/header.html',{
+    "title" : "会员专享",
+    "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/login/login.css"],
+    "bodyClass" : "bg",
+    "showLoading":false
+})
+
+<div class="content">
+  <div class="weui-flex" style="padding:15px 0; background:#fff">
+      <div class="weui-flex__item icon">
+          <img src="@@static/img/vip_ico.png" alt="">
+          <p>会员特权</p>
+      </div>
+      <div class="weui-flex__item icon">
+        <img src="@@static/img/huiyuan_ico.png" alt="">
+        <p>会员券</p>
+      </div>
+  </div>
+  <div class="weui-flex" style="border-top:1px solid #ccc; padding:15px 0;background:#fff">
+      <div class="weui-flex__item icon">
+        <img src="@@static/img/mianfei_ico.png" alt="">
+        <p>免费活动</p>
+      </div>
+      <div class="weui-flex__item icon">
+        <img src="@@static/img/jiangli_ico.png" alt="">
+        <p>积分奖励</p>
+      </div>
+  </div>
+  <div class="inner">
+    <ul>
+      <li>1:系统会不定期将优惠券发放到成功申请会员用户的会员帐号。</li>
+      <li>2:申请成功的会员，享有西门子家电江苏线上及线下的部分特权活动，详情见相应的活动说明。</li>
+      <li>3:会员每天签到可获得积分，每个月累计积分可兑
+   换相应礼品，积分次月失效，不得累积。兑换完
+   礼品后，当月不可再签到，直到次月可正常签到
+   积累积分。</li>
+      <li>4:成为会员的用户，可免费参与西门子家电江苏线
+   下报名活动。</li>
+    </ul>
+  </div>
+</div>
+<!-- 引入公共底部 -->
+@@include('@@static/template/footer.html')

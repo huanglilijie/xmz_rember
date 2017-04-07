@@ -5,64 +5,78 @@
     "showLoading":false
 })
 
-<div class="content">
-    <div class="search">
-        <input type="text" placeholder="请输入赠品码" class="giftNum">
-        <input type="button" value="兑换赠品" class="toGift">
-    </div>
-    <div class="giftNav">
-        <ul>
-            <li class="giftAct">
-                <p>未使用(0)</p>
-            </li>
-            <li>
-                <p>已使用(0)</p>
-            </li>
-            <li>
-                <p>已失效(0)</p>
-            </li>
-        </ul>
-    </div>
-    <div class="cpList">
-        <div class="couponList effList">
-            <ul>
-                <li class="couponEff">
-                    <p class="couponName">未使用</p>
-                    <p class="couponDate">限用日期：2017/03/04-05/08</p>
-                </li>
-                <li class="couponOver">
-                    <p class="couponName">优惠券名称</p>
-                    <p class="couponDate">限用日期：2017/03/04-05/08</p>
-                </li>
-            </ul>
-        </div>
-        <div class="couponList aluseList">
-            <ul>
-                <li class="couponEff">
-                    <p class="couponName">已使用</p>
-                    <p class="couponDate">限用日期：2017/03/04-05/08</p>
-                </li>
-                <li class="couponOver">
-                    <p class="couponName">优惠券名称</p>
-                    <p class="couponDate">限用日期：2017/03/04-05/08</p>
-                </li>
-            </ul>
-        </div>
-        <div class="couponList overList">
-            <ul>
-                <li class="couponEff">
-                    <p class="couponName">已过期</p>
-                    <p class="couponDate">限用日期：2017/03/04-05/08</p>
-                </li>
-                <li class="couponOver">
-                    <p class="couponName">优惠券名称</p>
-                    <p class="couponDate">限用日期：2017/03/04-05/08</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/gift/gift.js"></script>
+<div class="content" id="continer">
+
 </div>
+<script type="text/html" id="inner">
+  <div class="search">
+      <input type="text" placeholder="请输入赠品码" class="giftNum">
+      <input type="button" value="兑换赠品券" class="toGift">
+  </div>
+  <div class="giftNav">
+      <ul>
+          <li class="giftAct">
+            {{if Donations}}
+              <p>未使用({{Donations.length}})</p>
+            {{else}}
+              <p>未使用(0)</p>
+            {{/if}}
+          </li>
+          <li>
+            {{if Donations_use}}
+              <p>已使用({{Donations_use.length}})</p>
+            {{else}}
+              <p>已使用(0)</p>
+            {{/if}}
+          </li>
+          <li>
+            {{if Donations_deadtime}}
+              <p>已失效({{Donations_deadtime.length}})</p>
+            {{else}}
+              <p>已失效(0)</p>
+            {{/if}}
+          </li>
+      </ul>
+  </div>
+  <div class="cpList">
+      <div class="couponList effList">
+          <ul>
+            {{if Donations}}
+            {{each Donations as data i}}
+            <li class="couponEff">
+                <p class="couponName">{{data.title}}</p>
+                <p class="couponDate">限用日期：{{time(data.starttime)}}至{{time(data.endtime)}}</p>
+            </li>
+            {{/each}}
+            {{/if}}
+          </ul>
+      </div>
+      <div class="couponList aluseList">
+          <ul>
+            {{if Donations_use}}
+            {{each Donations_use as data i}}
+            <li class="couponOver">
+                <p class="couponName">{{data.title}}</p>
+                <p class="couponDate">限用日期：{{time(data.starttime)}}至{{time(data.endtime)}}</p>
+            </li>
+            {{/each}}
+            {{/if}}
+          </ul>
+      </div>
+      <div class="couponList overList">
+          <ul>
+              {{if Donations_deadtime}}
+              {{each Donations_deadtime as data i}}
+              <li class="couponOver">
+                  <p class="couponName">{{data.title}}</p>
+                  <p class="couponDate">限用日期：{{time(data.starttime)}}至{{time(data.endtime)}}</p>
+              </li>
+              {{/each}}
+              {{/if}}
+          </ul>
+      </div>
+  </div>
+</script>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/gift/gift.js"></script>
 <!-- 引入公共底部 -->
 @@include('@@static/template/footer.html')

@@ -9,6 +9,7 @@ define([
 		//消除移动端点击延迟
 		FastClick.attach(document.body);
 	})
+	window.Promise = Promise;
 	return {
 		callApi:function(options){
 			var _this = this;

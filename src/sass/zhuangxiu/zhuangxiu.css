@@ -1,0 +1,119 @@
+.bg{
+	background: #f1f1f1;
+}
+.search{
+	width: 100%;
+	padding: 20px 0px;
+	background: #fff;
+}
+.giftNum{
+	width: 50%;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 10%;
+	border: none;
+	border: 1px solid #b1b1b1;
+	border-radius: 8px;
+	text-indent: 10px;
+	font-size: 13px;
+	box-sizing: border-box;
+}
+.toGift{
+	width: 25%;
+	height: 35px;
+	line-height: 35px;
+	border: none;
+	border-radius: 8px;
+	font-size: 13px;
+	margin-left: 5%;
+	background: #ffb900;
+	color: #fff;
+}
+.menu{
+	margin-top: 10px;
+}
+#header {
+	position:relative;
+	width: 100%;
+	height: 43px;
+	overflow: hidden;
+	background: #fdfdfc;
+	font: 12px/40px hiragino sans gb, microsoft yahei, simsun;
+	border-bottom: 1px solid #ccc;
+}
+#header .swiper-slide {
+	padding: 0 10px;
+	width:auto;
+}
+#header .swiper-slide.active{
+	color: orange;
+}
+#header .swiper-slide.active:after{
+	content: '';
+	display: block;
+	height: 1px;
+	background: orange;
+	margin-top: -5px;
+}
+.banner{
+	padding: 10px;
+	background: #fff;
+}
+#banner {
+	width: 100%;
+	height:170px;
+	overflow: hidden;
+	position:relative;
+}
+#banner img{
+	height: 100%;
+}
+#banner .swiper-slide {
+	position:relative;
+	text-align:center;
+}
+#banner img {
+	max-width: 100%;
+}
+.gallerytitle {
+text-align: left;
+font-size: 14px;
+padding-left: 10px;
+color: #fafafa;
+position: absolute;
+left: 0;
+bottom: 20px;
+font-weight: normal;
+}
+.swiper-container-horizontal .pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+	width: 95%;
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius:5px;
+  background: #fff;
+  margin: 0 2px;
+  opacity: 0.8;
+  cursor: pointer;
+	float: right;
+}
+.swiper-pagination-bullet-active {
+  background: #ff6600;
+}
+.list_item{
+	background: #fff;
+	margin-top: 10px;
+}
+.weui-media-box{
+	padding: 10px;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+	width: 90px;
+	height: 65px;
+}

@@ -31,7 +31,7 @@
 }
 .mscore{
 	color: #ffb900;
-	font-size: 20px;
+	font-size: 21px;
 	width: 100%;
 	text-align: center;
 }
@@ -41,4 +41,63 @@
 .freedom{
 	background: #fff;
 	margin-top: 10px;
+}
+
+/*签到*/
+.qiandao_mask{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+		display: none;
+}
+.qiandao_inner{
+	width: 80%;
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	left: 10%;
+	top: 13%;
+}
+
+table{
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+td{
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 1;
+}
+.today{
+	background: #77d5e6;
+	color: #fff;
+	border-radius: 100%;
+}
+.tips{
+	font-size: 12px;
+	color: orange;
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+.tips_small{
+	font-size: 12px;
+	color: #ccc;
+	text-align: center;
+	padding: 10px 0;
+}
+.qiandao_btn{
+	width: 54%;
+	margin-left: 23%;
+	margin-top: 15px;
+	background: orange;
+	text-align: center;
+	color: #fff;
+	line-height: 40px;
+	border-radius: 5px;
 }

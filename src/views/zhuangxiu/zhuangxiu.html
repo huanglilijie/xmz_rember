@@ -1,0 +1,66 @@
+@@include('@@static/template/header.html',{
+    "title" : "装修ing",
+    "cssFile" : ["@@static/sass/lib/common.css","@@static/sass/lib/swiper.css","@@static/sass/zhuangxiu/zhuangxiu.css"],
+    "bodyClass" : "bg",
+    "showLoading":false
+})
+
+<div class="content">
+  <div class="search">
+      <input type="text" placeholder="" class="giftNum">
+      <input type="button" value="立即搜索" class="toGift">
+  </div>
+  <div class="menu">
+    <div id="header">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">1月</div>
+        <div class="swiper-slide active">2月</div>
+        <div class="swiper-slide">3月</div>
+        <div class="swiper-slide">4月</div>
+        <div class="swiper-slide">5月</div>
+        <div class="swiper-slide">6月</div>
+        <div class="swiper-slide">7月</div>
+        <div class="swiper-slide">8月</div>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+      <div id="banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="@@static/img/zhanwei.png" /><h2 class="gallerytitle">标题装修名称</h2></div>
+            <div class="swiper-slide"><img src="@@static/img/zhanwei.png" /><h2 class="gallerytitle">标题装修名称</h2></div>
+            <div class="swiper-slide"><img src="@@static/img/zhanwei.png" /><h2 class="gallerytitle">标题装修名称</h2></div>
+          </div>
+          <div class="pagination"></div>
+      </div>
+  </div>
+  <div class="list_item">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="@@static/img/zw.png" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <p class="weui-media-box__desc" style="color:#000">这里是标题，装修名称。标题长可以换行。</p>
+            <ul class="weui-media-box__info">
+                <li class="weui-media-box__info__meta">2017-03-04</li>
+                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">浏览量：2334</li>
+            </ul>
+        </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" src="@@static/img/zw.png" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+            <p class="weui-media-box__desc" style="color:#000">这里是标题，装修名称。标题长可以换行。</p>
+            <ul class="weui-media-box__info">
+                <li class="weui-media-box__info__meta">2017-03-04</li>
+                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">浏览量：2334</li>
+            </ul>
+        </div>
+    </a>
+  </div>
+</div>
+<script type="text/javascript" src="@@static/js/lib/require.js" data-main="@@static/js/zhuangxiu/zhuangxiu.js"></script>
+<!-- 引入公共底部 -->
+@@include('@@static/template/footer.html')
